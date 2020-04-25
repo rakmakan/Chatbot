@@ -1,0 +1,93 @@
+question,type
+"What is a Phoenix?	",Q
+"What are the various applications to which Phoenix interacts?	",Q
+"How many servers are allocated to Phoenix application?	",Q
+"What GIN means?	",Q
+"How GIN is different from Job ID?	",Q
+"How many job types are there?	",Q
+"What are codeline 1 jobs?	",Q
+"What are codeline 2 jobs?	",Q
+"Why CM jobs have Reconcile page?	",Q
+"How many invoices types are there?	",Q
+"What is the use of EPF in Phoenix?	",Q
+"How does different application interact with one another?	",Q
+"What is web service log?	",Q
+"Can a customer have more than one contract/contact?	",Q
+"What is the role of ISF in Phoenix?	",Q
+"Can a Deposit Invoice be created for CM type of job?	",Q
+"Express billing route is applicable for which type of jobs?	",Q
+"What are the types of CM jobs?	",Q
+"What are the types of CE jobs?	",Q
+".Name the table associated with Entry page along with the primary key?	",Q
+"Name the table associated with Customers?	",Q
+"Name the table associated with job instructions?	",Q
+"Name the table associated with Select charges?	",Q
+"Name the table associated with Invoice Preview?	",Q
+"Name the table associated with View Invoice?	",Q
+"Name the table associated with Credit Invoice?	",Q
+"What is the business unit on Entry Page?	",Q
+"What is the use of Operations Field on Entry Page?	",Q
+"How can one select the Service Location?	",Q
+"What can happen if finish date is not filled in the Entry Page?	",Q
+"How can we know whether a customer's status is active/inactive?	",Q
+"What all information is present in the Customers field?	",Q
+"What does Job instruction page contains?	",Q
+"What is the Origin field in job instruction page?	",Q
+"What is Remit to field in JI page?	",Q
+"On which technology phoenix works?	",Q
+"What is the use of check box (GLIMS and ISWIM) on Job instruction page?	",Q
+"What are the types of status?	",Q
+"How can we check the reason for integration failure on phoenix apart from checking on database?	",Q
+"What does Inspection tab on Reconcile page consists of?	",Q
+"How does inspection info flows?	",Q
+"What is to be done on select Charges page?	",Q
+"How and where a deposit invoice can be created?	",Q
+"Which type of invoices are not applicable for CM type jobs?	",Q
+"What is a deposit invoice?	",Q
+"What is a Consolidated invoice?	",Q
+"What is a Recurring invoice?	",Q
+"Why is it needed to update deposit invoice?	",Q
+"How can one update deposit invoice?	",Q
+"Can Deposit Reference number be changed?	",Q
+"How can a user search for consolidated invoices that have been generated?	",Q
+"Can there be more than one ISF associated with a job?	",Q
+"When does the status of ISF gets changed to Completed?	",Q
+"How many ISF can be there in the ReadyToBill status?	",Q
+"What is the significance of integrating messages?	",Q
+"Integration messages are present in which format?	",Q
+"For which jobs , EPF is present?	",Q
+"Where can a user associate ISF with an invoice?	",Q
+"Which type of jobs have more than one contracts?	",Q
+"Can more than one invoices be generated for a particular job?	",Q
+"Sorry, I don't know about the weather.	",S
+"MAX is a Mobile Application Accelerator	",S
+"MAX is Mobile Application Accelerator	",S
+"The Product Manager for MAX is Grant Henry	",S
+"ChatbotCS is the Oracle Chatbot Cloud Service	",S
+"MAX is a codeless tool for business analysts	",S
+"ABCS is Application Builder Cloud Service	",S
+"OCCS is the Oracle Container Cloud Service based off Docker	",S
+"OCM is Oracle Cloud Machine, an on-premise cloud device	",S
+"I do not recommened using a QR code	",S
+"NodeJS is good for web applications	",S
+"JSON is JavaScript Object Notification	",S
+"A database is used for storing and retreiving data.	",S
+"Dominic Fakename is one of the senior product managers for the Oracle database.	",S
+"Oracle 12.2 will be released for on-premises users on 15 March 2017	",S
+"You need an SSH key to access remote resources in the Oracle cloud	",S
+"Application Builder Cloud Service, designed for citizen developers	",S
+"Mobile Cloud Service	",S
+"Mobile Application Accelerator	",S
+"Shay MadeUpName is the PM for ABCS	",S
+"Martin Dummyname can help with MCS	",S
+"Shay MadeUpName	",S
+"ACCS is the Application Container Cloud Service	",S
+"Bob Smith is the PM for ACCS	",S
+"A product manager for Oracle database	",S
+"Dom Fakename is one of the product managers for the Oracle database.	",S
+"Oracle 12.2 will be released on the 15th of March.	",S
+"The cat is sleeping	",S
+"The cow is in the field	",S
+"Oracle 12c database will be released in March 2017	",S
+"Arsenal are a football team in North London	",S
+"Python is an interpreted programming language with a very clean and distinctive syntAx	",S
