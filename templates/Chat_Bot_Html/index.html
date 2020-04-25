@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+body {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 0 20px;
+}
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+
+.button1 {border-radius: 12px;}
+</style>
+    {% comment %} <link rel="stylesheet" type="text/css" href="/static/style.css"> {% endcomment %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+  <div style="width:400px;border-style: ridge; border-width:1px;">
+  <div style="background-color:yellow;">
+	<table style="width:400px;border-style: ridge; border-width:1px;">
+	<tr>
+	<td  width="40%"><img src="ITK_logo_transparent.png" alt="Intertek Buddy"  style="width:70px;height:50px;"></td>
+	<td width="40%" align="left"><b>Intertek buddy</b></td>
+	<td align="right" valign="top" width="20%">
+		<img src="close.png" alt="Intertek Buddy"  style="width:20px;height:20px;" onclick="window.close();">
+	</td>
+	</tr>
+	</table>	
+  </div>
+    <div>
+      <div id="chatbox" class="container">
+        <div class="container darker">Hi! how can i help you</div>
+      </div>
+      <div id="userInput" style="width:400px;border-style: ridge; border-width:1px;">
+	  <table>
+		<tr>
+			<td><input id="textInput" type="text" name="msg" placeholder="Type here...." style="width:300px;height:30px;"></td>
+			<td>
+			<input id="buttonInput" type="submit" value="Send" style="width:80px;border-radius: 12px;height:30px;color: black;border: 2px solid #555555;"></td>
+		</tr>
+	  </table>       
+      </div>
+
+
+
+<script>
+  var today = new Date();
+	var timeId=0;
+
+  function getBotResponse()
+  {
+    today = new Date();
+		try{
+          var rawText = $("#textInput").val();
+          console.log('Raw text for backend',rawText)
+          var userHtml = '<div class="container">Hi.......<span class="time-right" id="time'+timeId+'" style="font-size:80%;"></span></div>';
+          $("#textInput").val("");
+          $("#chatbox").append(userHtml);
+          document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+		  }catch(e){
+		  $("#chatbox").append('Hello');
+		  //alert(e);
+		  }
+
+          /*$.get("/get", { msg: rawText }).done(function(data) 
+          {
+          var botHtml = '<p class="botText"><div class="container darker">' + data + '</div></p>';
+          $("#chatbox").append(botHtml);
+          document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+            
+          });*/
+		  
+		  var botHtml = '<div class="container darker">I am a chatbot</div>';
+          $("#chatbox").append(botHtml);
+          document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+        }
+        $("#textInput").keypress(function(e) {
+            if(e.which == 13) {
+                getBotResponse();
+				//var today = new Date();
+			document.getElementById('time'+timeId).innerHTML=today.toUTCString();
+			timeId=timeId+1;
+            }
+        });
+        $("#buttonInput").click(function() {
+          getBotResponse();
+		  //var today = new Date();
+		    document.getElementById('time'+timeId).innerHTML=today.toUTCString();
+			timeId=timeId+1;
+        });
+
+		
+      </script>
+    </div>
+	</div>
+  </body>
+</html> 
+ 

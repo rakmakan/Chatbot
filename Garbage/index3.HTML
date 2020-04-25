@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+<!--
+body
+	{margin:0 auto;
+	max-width:400px;
+	padding:0 20px}
+.container
+	{border:1px solid #dedede;
+	background-color:#f1f1f1;
+	border-radius:5px;
+	padding:5px;
+	margin:5px 0}
+.darker
+	{border-color:#ccc;
+	background-color:#ddd}
+.container img
+	{float:left;
+	max-width:60px;
+	width:100%;
+	margin-right:20px;
+	border-radius:50%}
+.container img.right
+	{float:right;
+	margin-left:20px;
+	margin-right:0}
+.time-right
+	{float:right;
+	color:#aaa}
+.time-left
+	{float:left;
+	color:#999}
+.button1
+	{border-radius:12px}
+-->
+</style><link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+<div style="width:400px; border-style:ridge; border-width:1px">
+<div style="background-color:yellow">
+<table style="width:400px; border-style:ridge; border-width:1px">
+<tbody>
+<tr>
+<td width="40%"><img blockedImageSrc="{{url_for('static',filename = 'ITK_logo_transparent.PNG')}}" alt="Intertek Buddy" style="width:70px; height:50px"></td>
+<td width="40%" align="left"><b>Intertek buddy</b></td>
+<td align="right" valign="top" width="20%"><img blockedImageSrc="{{url_for('static',filename = 'Close.PNG')}}" alt="Intertek Buddy" style="width:20px; height:20px">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<div id="chatbox" class="container">
+<div class="container darker">Hi! how can i help you</div>
+</div>
+<div id="userInput" style="width:400px; border-style:ridge; border-width:1px">
+<table>
+<tbody>
+<tr>
+<td><input id="textInput" type="text" name="msg" style="width:300px; height:30px"></td>
+<td><input id="buttonInput" type="submit" value="Send" style="width:80px; border-radius:12px; height:30px; color:black; border:2px solid #555555"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>
