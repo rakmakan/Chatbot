@@ -1,6 +1,15 @@
 # Chatbot
 
 
-| col 1      | col 2      |
-|------------|-------------|
-| <img src="https://media.wired.com/photos/5926db217034dc5f91becd6b/master/w_582,c_limit/so-logo-s.jpg" width="250"> | <img src="https://mk0jobadderjftub56m0.kinstacdn.com/wp-content/uploads/stackoverflow.com-300.jpg" width="250"> | 
+### In this project there are two algorithms 
+1. Rules based algorithm
+  * The rule based algorithm is accessible by running the rule_based.py
+  * It reads data from the CSV file which can be updated with domain specific data
+  * In case the chatbot doesnot have any answer then the question can be sent to the csv file "no_ans.csv"
+  * In this the chat bot replies based on the word matching
+
+
+2. Model based algorithm
+  * This part of the bot is under developement. Currently it uses SBERT model to derive the sentence vectors
+  * The cosine similarity between the input and the stored data is matched to produce an output
+ 
