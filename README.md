@@ -1,3 +1,3 @@
 # Chatbot
 
-![Screenshot](galary/chatbot.jpg)
+![Screenshot](galary/chatbot.JPG)
