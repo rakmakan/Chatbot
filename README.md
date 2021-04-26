@@ -1,2 +1,3 @@
 # Chatbot
-Self Learning
+
+![alt text](http://url/to/img.png)
