@@ -1,3 +1,6 @@
 # Chatbot
 
-![Screenshot](galary/chatbot.jpg)
+<p align="center">
+  <img src='galary/chatbot.jpg' width="350" title="hover text">
+  
+</p>
